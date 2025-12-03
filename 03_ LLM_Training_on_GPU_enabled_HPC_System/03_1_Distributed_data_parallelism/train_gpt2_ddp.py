@@ -1,7 +1,5 @@
-# pipeline.py  (revised)
 import os
-os.environ["TOKENIZERS_PARALLELISM"] = "false"  # avoid tokenizer parallelism warning
-
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
 import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader, DistributedSampler, SequentialSampler
@@ -10,9 +8,9 @@ import matplotlib.pyplot as plt
 import torch.distributed as dist
 from torch.nn.parallel import DistributedDataParallel as DDP
 
-# -------------------------------
+num_workers = int(os.environ.get("SLURM_CPUS_PER_TASK", 1))
+
 # Dataset
-# -------------------------------
 class GPTDatasetV1(Dataset):
     def __init__(self, txt, tokenizer, max_length, stride):
         self.input_ids = []
@@ -62,7 +60,7 @@ def make_dataloaders_from_text(txt, tokenizer, gpt_config, settings, local_rank,
                               sampler=train_sampler if train_sampler is not None else None,
                               shuffle=(train_sampler is None),
                               drop_last=True,
-                              num_workers=2,
+                              num_workers=num_workers,
                               pin_memory=True)
 
     # validation should not be shuffled, use SequentialSampler if distributed
@@ -72,7 +70,7 @@ def make_dataloaders_from_text(txt, tokenizer, gpt_config, settings, local_rank,
                             sampler=val_sampler,
                             shuffle=False,
                             drop_last=False,
-                            num_workers=2,
+                            num_workers=num_workers,
                             pin_memory=True)
 
     return train_loader, val_loader, train_sampler
