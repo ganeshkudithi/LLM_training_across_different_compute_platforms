@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=ddp           # Job name
+#SBATCH --job-name=ddp                 # Job name
 #SBATCH --nodes=2                      # Number of nodes
 #SBATCH --ntasks-per-node=1            # Number of tasks (one per GPU per node)
 #SBATCH --gres=gpu:2                   # Number of GPUs on each node
@@ -8,7 +8,7 @@
 #SBATCH --output=logs_%j.out           # Output log file
 #SBATCH --error=logs_%j.err            # Error log file
 #SBATCH --time=00:20:00                # Time limit
-##SBATCH --reservation=SCA
+#SBATCH --reservation=SCI25
 
 # Define variables for distributed setup
 nodes_array=($(scontrol show hostnames $SLURM_JOB_NODELIST))
@@ -46,6 +46,6 @@ srun torchrun \
     --rdzv-id=10 \
     --rdzv-backend=c10d \
     --rdzv-endpoint=$MASTER_ADDR:$MASTER_PORT \
-    train_ddp_gpt_2.py
+    train_gpt2_ddp.py
 
  
