@@ -20,13 +20,6 @@ This repository contains materials for the tutorial: Supercomputing India (SCI) 
 * Conda / Miniconda
 
 
-## Learning Flow
-
-1. Basics
-2. Parallelism notebooks
-3. Distributed training
-4. Fine-tuning approaches
-
 ## Supported Topics
 
 * Distributed Data Parallel (DDP)
