@@ -37,15 +37,31 @@ This repository contains materials for the tutorial: Supercomputing India (SCI) 
 
 ## References
 
-### Documentation
+Here is the **clean `References` section** updated with your requested links, formatted for GitHub README.md.
+You can paste this directly under your `## References` section.
 
-* PyTorch: [https://pytorch.org](https://pytorch.org)
-* TorchTune: [https://pytorch.org/torchtune](https://pytorch.org/torchtune)
-* Hugging Face: [https://huggingface.co/docs](https://huggingface.co/docs)
-* Slurm: [https://slurm.schedmd.com](https://slurm.schedmd.com)
+## References
 
-### Research
+### Software & Frameworks
 
-* ZeRO: [https://arxiv.org/abs/1910.02054](https://arxiv.org/abs/1910.02054)
-* GPipe: [https://arxiv.org/abs/1811.06965](https://arxiv.org/abs/1811.06965)
-* FSDP: [https://arxiv.org/abs/2304.11277](https://arxiv.org/abs/2304.11277)
+* Miniconda – [https://docs.conda.io/en/latest/miniconda.html](https://docs.conda.io/en/latest/miniconda.html)
+* Unsloth – [https://github.com/unslothai/unsloth](https://github.com/unslothai/unsloth)
+* TorchTune – [https://pytorch.org/torchtune](https://pytorch.org/torchtune)
+* PyTorch – [https://pytorch.org](https://pytorch.org)
+* Hugging Face – [https://huggingface.co/docs](https://huggingface.co/docs)
+* Slurm – [https://slurm.schedmd.com](https://slurm.schedmd.com)
+
+### Parallelism Documentation
+
+* Distributed Data Parallel (DDP)
+  [https://pytorch.org/docs/stable/generated/torch.nn.parallel.DistributedDataParallel.html](https://pytorch.org/docs/stable/generated/torch.nn.parallel.DistributedDataParallel.html)
+
+* Tensor Parallelism
+  [https://pytorch.org/docs/stable/distributed.tensor.parallel.html](https://pytorch.org/docs/stable/distributed.tensor.parallel.html)
+
+* Pipeline Parallelism
+  [https://pytorch.org/docs/stable/distributed.pipeline.sync.html](https://pytorch.org/docs/stable/distributed.pipeline.sync.html)
+
+* Fully Sharded Data Parallel (FSDP)
+  [https://pytorch.org/docs/stable/fsdp.html](https://pytorch.org/docs/stable/fsdp.html)
+
