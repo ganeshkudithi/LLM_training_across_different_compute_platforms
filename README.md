@@ -30,11 +30,6 @@ This repository contains materials for the tutorial: Supercomputing India (SCI) 
 
 ## References
 
-Here is the **clean `References` section** updated with your requested links, formatted for GitHub README.md.
-You can paste this directly under your `## References` section.
-
-## References
-
 ### Software & Frameworks
 
 * Miniconda – [https://docs.conda.io/en/latest/miniconda.html](https://docs.conda.io/en/latest/miniconda.html)
