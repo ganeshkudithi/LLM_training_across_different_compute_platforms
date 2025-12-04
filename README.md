@@ -52,6 +52,3 @@ Supercomputing India (SCI) 2025
 * ZeRO: [https://arxiv.org/abs/1910.02054](https://arxiv.org/abs/1910.02054)
 * GPipe: [https://arxiv.org/abs/1811.06965](https://arxiv.org/abs/1811.06965)
 * FSDP: [https://arxiv.org/abs/2304.11277](https://arxiv.org/abs/2304.11277)
-
-
-If you want, I can also provide **badges**, **citation block**, or **contribution template** in a minimal format.
