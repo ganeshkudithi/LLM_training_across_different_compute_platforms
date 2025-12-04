@@ -9,7 +9,7 @@ This repository provides a guide to deep learning with **PyTorch**, along with b
 
 ## Repository Structure
 ```
-/01_introduction/
+/01_Basics/
  ├── 01_SLURM.md                    # SLURM job scheduling guide
  ├── 02_Modules.md                  # Guide on managing modules
  ├── 03_slurm_cheatbook.pdf         # SLURM command reference
