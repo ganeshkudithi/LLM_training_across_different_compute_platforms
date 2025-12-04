@@ -1,9 +1,6 @@
 # Training of Large Language Models (LLMs) Across Different Compute Platforms
 
-This repository contains materials for the tutorial:
-
-**Training of Large Language Models (LLMs) Across Different Compute Platforms**
-Supercomputing India (SCI) 2025
+This repository contains materials for the tutorial: Supercomputing India (SCI) 2025
 
 ## Repository Structure
 ```
